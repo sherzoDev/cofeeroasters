@@ -50,6 +50,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -298,3 +299,75 @@ ul {
 }
 
 /* End of Collection Section */
+
+/* Why choose us section */
+
+.why-choose-section {
+    background-image: url("../images/choosebg-img.jpg");
+    height: 703px;
+    margin: 20px 20px 0 20px;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.choose-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.choose-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.choose-img-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.cofee-before {
+    position: absolute;
+    transform: translate(-65%, -35%);
+}
+
+.choose-desc h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.choose-desc p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+}
+
+/* End Why choose us section */
