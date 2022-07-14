@@ -1,0 +1,286 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+         url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+         url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/roboto-v30-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+ @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+         url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/roboto-v30-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:root {
+    --main-black-color: #000000;
+    --main-gray-color: #333333;
+    --main-white-color: #ffffff;
+    --main-link-color: #C99B67;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar section */
+
+.site-header {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    background-image: url("../images/hero-background-img.png");
+}
+
+.site-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-link:not(:first-child) {
+    margin-left: 40px;
+}
+
+.site-link {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* End Navbar section */
+
+/* Hero Section */
+
+#hero {
+    background-image: url("../images/orange-bg-img.jpg");
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+
+.hero-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.hero-info h1,
+.about-hero-text h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--main-black-color);
+}
+
+.hero-info {
+    width: 545px;
+    padding: 116px 0 0 84px;
+}
+
+.hero-info p {
+    margin: 24px 0 34px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-black-color);
+    mix-blend-mode: normal
+}
+
+.hero-info a {
+    display: inline-block;
+    padding: 18px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: var(--main-white-color);
+    mix-blend-mode: normal;
+    background: #0A775F;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.hero-bg-box {
+    position: relative;
+    left: 89px;
+    top: 4px;
+}
+
+.hero-bg-box::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -70px;
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-image: url("../images/hero-round-img.png");
+    background-position: center;
+}
+
+/* End Hero Section */
+
+/* Start Collection Section */
+
+#collection {
+    overflow: hidden;
+}
+
+.collection-bg-box {
+    margin: 0 20px 0 20px;
+    padding: 50px 0;
+    background-image: url('../images/gray-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.collection-part h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--main-black-color);
+}
+
+.collection-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 80px auto 0;
+    width: 1120px;
+    list-style: none;
+}
+
+.collection-item:not(:first-child) {
+    margin-top: 0;
+}
+
+.collection-item:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: -130px;
+    left: -312px;
+    width: 402px;
+    height: 300px;
+    background-image: url('../images/collection-img-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.collection-item:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: -280px;
+    right: -412px;
+    width: 392px;
+    height: 477px;
+    background-image: url('../images/collection-img-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.collection-item:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -370px;
+    width: 316px;
+    height: 269px;
+    background-image: url('../images/collection-img-3.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.collection-item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.collection-item:nth-child(1) .collection-item-info {
+    width: 453px;
+}
+
+.collection-item:nth-child(2) .collection-item-info,
+.collection-item:nth-child(3) .collection-item-info {
+    width: 390px;
+}
+
+.collection-item:nth-child(4) .collection-item-info {
+    width: 410px;
+}
+
+.collection-item:nth-child(odd) .collection-item-info {
+    margin-left: 117px;
+}
+
+.collection-item:nth-child(even) .collection-item-info {
+    margin-right: 117px;
+}
+
+.collection-item-info h3 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: var(--main-gray-color);
+}
+
+.collection-item-info p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: var(--main-gray-color);
+}
+
+/* End of Collection Section */
