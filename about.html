@@ -25,7 +25,7 @@
                         <li class="site-item">
                             <a class="site-link" href="./index.html">HOME</a>
                             <a class="site-link" href="./about.html">ABOUT US</a>
-                            <a class="site-link" href="./plan.html">CREATE YOUR PLAN</a>
+                            <button style="text-transform: uppercase;" class="plan-btn-nav header-link js-modal-open" type="button">Create your plan</button></a>
                         </li>
                     </ul>
                 </nav>
@@ -157,7 +157,7 @@
                                 <a style="font-size: 16px; margin: 0 40px;" class="site-link" href="./about.html">ABOUT US</a>
                             </li>
                             <li class="site-item">
-                                <a style="font-size: 16px;" class="site-link" href="./plan.html">CREATE YOUR PLAN</a>
+                                <a style="font-size: 16px;" class="site-link" href="./plan.html"><button class="plan-btn-nav" type="button">CREATE YOUR PLAN</button></a>
                             </li>
                         </ul>
                         <ul class="icon-list">
@@ -181,6 +181,30 @@
                 </div>
             </footer>
             <!-- End of Footer Section -->
+            
+            
+            <!-- MODAL START -->
+            <div class="overlay">
+                <div class="overlay-modal">
+                    <div class="modal-container">
+                        <h2 class="overlay-modal-heading">order Summary</h2>
+                        <p class="overlay-modal-text">
+                            "I drink my coffee as <span class="overlay-modal-markeds">Filter</span>, with a <span class="overlay-modal-markeds">Decaf</span> type of bean. <span class="overlay-modal-markeds">250g</span> ground ala <span class="overlay-modal-markeds">Cafetiére</span>, sent to me <span class="overlay-modal-markeds">Every Week"</span>.
+                        </p>
+                        
+                        <p class="overlay-modal-text-end">
+                            Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+                        </p>
+                        
+                        <div class="overlay-modal-bottom">
+                            <span class="overlay-modal-price">$14.00/ mo</span>
+                            <button class="overlay-modal-btn js-modal-close" type="button">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL FINISH -->
+            
         </main>
     </body>
     </html>
