@@ -51,6 +51,20 @@ body {
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -727,7 +741,159 @@ footer {
 
 /* Create Plan Page Satart */
 
+.drink-coffe {
+    margin: 20px 20px 50px 20px;
+    background-image: url('../images/gray-bg-img.jpg');
+}
 
+.drink-coffe-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffe-item:not(:first-child) {
+    margin-top: 30px;
+}
+
+.coffe-link {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #555555;
+    border-bottom: 3px dashed transparent;
+    transition: all 0.3s ease;
+}
+
+.coffe-link:hover {
+    color: #000000;
+    border-bottom: 3px dashed #C99B67;
+    width: 100%;
+}
+
+.coffe-link:focus {
+    color: #000000;
+    border-bottom: 3px dashed #C99B67;
+    width: 100%;
+}
+
+summary {
+    list-style: none;
+}
+
+.sum-heading {
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--main-black-color);
+    padding-right: 55px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.summary-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-box-one {
+    background-color: #C8DDD3;
+    padding-top: 30px;
+    padding-left: 15.99px;
+    padding-right: 16.99px;
+    padding-bottom: 80px;
+}
+
+.summary-box-one:hover {
+    background-color: #0A775F;
+    color: var(--main-white-color);
+}
+
+.head-sum {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.summary-box-one p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.coffe-bottom-box {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 40px 21px;
+    background: #C99B67;
+    color: var(--main-white-color);
+}
+
+.coffe-bottom-box h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.coffe-bottom-box p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.coffe-bottom-box p span {
+    color: var(--main-black-color);
+}
+
+.modal-bottom-btn {
+    padding: 16px 24px;
+    color: var(--main-white-color);
+    background-color: #0A775F;
+    border: none;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 450px;
+}
+
+.drink-coffe-right {
+    position: relative;
+}
+
+.drink-coffe-right::after {
+    top: 170px;
+    right: -60%;
+    background-image: url("../images/collection-img-2.svg");
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.before-svg-img::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 00%;
+    left: -163%;
+    background-image: url("../images/collection-img-1.svg")
+}
 
 /* Create Plan Page finish */
 
@@ -743,32 +909,31 @@ footer {
     padding-top: 70px;
     background-color: #00000080;
     display: none;
- }
- 
- .modal-open {
+}
+
+.modal-open {
     display: block;
- }
- 
- .overlay-modal {
+}
+
+.overlay-modal {
     position: relative;
     top: -500px;
     width: 561px;
     margin: 0 auto;
     background-color: #F8F8F2;
     padding-bottom: 1px;
- 
-    animation-name: animation;
+    animation-name: slideDown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
- }
- 
- @keyframes animation {
+}
+
+@keyframes slideDown {
     100% {
-       top: 0;
+        top: 0;
     }
- }
- 
- .overlay-modal-heading {
+}
+
+.overlay-modal-heading {
     font-size: 44px;
     line-height: 52px;
     color: #FFFFFF;
@@ -778,40 +943,40 @@ footer {
     margin-right: -30px;
     margin-left: -30px;
     margin-bottom: 40px;   
- }
- 
- .overlay-modal-text {
+}
+
+.overlay-modal-text {
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 10px;
- }
- 
- .overlay-modal-markeds {
+}
+
+.overlay-modal-markeds {
     color: #0A775F;
- }
- 
- .overlay-modal-text-end {
+}
+
+.overlay-modal-text-end {
     font-size: 18px;
     line-height: 26px;
     color: var(--dark-gray);
     margin-bottom: 40px;
- }
- 
- .overlay-modal-bottom {
+}
+
+.overlay-modal-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
- }
- 
- .overlay-modal-price {
+}
+
+.overlay-modal-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;   
- }
- 
- .overlay-modal-btn {
+}
+
+.overlay-modal-btn {
     cursor: pointer;
     border: none;
     background: none;
@@ -825,10 +990,10 @@ footer {
     border-radius: 100px;
     background-color: #0A775F;
     padding: 16px 24px;
- }  
+}  
 
- .modal-container {
+.modal-container {
     max-width: 561px;
     margin: 0 auto;
     padding: 0 30px;
- }
+}
