@@ -111,98 +111,198 @@
                                     <li class="coffe-item"><a class="coffe-link" href="#">04 Grind Option</a></li>
                                     <li class="coffe-item"><a class="coffe-link" href="#">05 Deliveries</a></li>
                                 </ul>
-                                <div class="drink-coffe-right">
-                                    <details class="details-boxes">
-                                        <summary class="sum-heading">How do you drink your coffee?</summary>
-                                        <div class="summary-boxes">
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">CAPSULE</summary>
-                                                <p>Compatible with <br> Nespresso systems <br> and similar brewers</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Filter</summary>
-                                                <p>For pour over or <br> drip methods like <br> Aeropress, Chemex, <br> and V60</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Espresso</summary>
-                                                <p>Dense and finely <br> ground beans foran <br>  intense, flavorful <br> experience</p>
-                                            </div>
+                                <div class="create-form">
+                                            <form action="" method="POST" autocomplete="off">
+                                                <ul class="form-list">
+                                                    <li class="form-item">
+                                                        <details class="form-details ">
+                                                            <summary class="form-summary">How do you drink your coffee? </summary>
+                                                            <div class="from-box-wrapper form-img">
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="drink_coffee"
+                                                                        aria-label="How do you drink your coffee?" value="Capsule?">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Capsule</h3>
+                                                                        <p class="form-one-p">Compatible with Nespresso systems and similar
+                                                                            brewers
+                                                                        </p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="drink_coffee"
+                                                                        aria-label="How do you drink your coffee?" value="Filter">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Filter</h3>
+                                                                        <p class="form-one-p">For pour over or drip methods like Aeropress,
+                                                                            Chemex,
+                                                                            and V60</p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="drink_coffee"
+                                                                        aria-label="How do you drink your coffee?" value="Espresso">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Espresso</h3>
+                                                                        <p class="form-one-p">Dense and finely ground beans for an intense,
+                                                                            flavorful experience</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </details>
+                                                    </li>
+                                                    <li class="form-item">
+                                                        <details class="form-details">
+                                                            <summary class="form-summary">What type of coffee?</summary>
+                                                            <div class="from-box-wrapper">
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_type"
+                                                                        aria-label="How do you drink your coffee?" value="Capsule?">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Single Origin</h3>
+                                                                        <p class="form-one-p">Distinct, high quality coffee from a specific
+                                                                            family-owned farm
+                                                                        </p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_type"
+                                                                        aria-label="How do you drink your coffee?" value="Filter">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Decaf</h3>
+                                                                        <p class="form-one-p">Just like regular coffee, except the caffeine has
+                                                                            been removed</p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_type"
+                                                                        aria-label="How do you drink your coffee?" value="Espresso">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Blended</h3>
+                                                                        <p class="form-one-p">Combination of two or three dark roasted beans of
+                                                                            organic coffees</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </details>
+                                                    </li>
+                                                    <li class="form-item">
+                                                        <details class="form-details">
+                                                            <summary class="form-summary">How much would you like?</summary>
+                                                            <div class="from-box-wrapper form-img-three">
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="would_you"
+                                                                        aria-label="How do you drink your coffee?" value="Capsule?">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">250g</h3>
+                                                                        <p class="form-one-p">Perfect for the solo drinker. Yields about 12
+                                                                            delicious cups.
+                                                                        </p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="would_you"
+                                                                        aria-label="How do you drink your coffee?" value="Filter">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">500g</h3>
+                                                                        <p class="form-one-p">Perfect option for a couple. Yields about 40
+                                                                            delectable cups.</p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="would_you"
+                                                                        aria-label="How do you drink your coffee?" value="Espresso">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">1000g</h3>
+                                                                        <p class="form-one-p">Perfect for offices and events. Yields about 90
+                                                                            delightful cups.</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </details>
+                                                    </li>
+                                                    <li class="form-item">
+                                                        <details class="form-details">
+                                                            <summary class="form-summary">Want us to grind them?</summary>
+                                                            <div class="from-box-wrapper">
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_grind"
+                                                                        aria-label="How do you drink your coffee?" value="Capsule?">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Wholebean</h3>
+                                                                        <p class="form-one-p">Best choice if you cherish the full sensory
+                                                                            experience
+                                                                        </p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_grind"
+                                                                        aria-label="How do you drink your coffee?" value="Filter">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Filter</h3>
+                                                                        <p class="form-one-p">For drip or pour-over coffee methods such as V60
+                                                                            or Aeropress</p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="coffe_grind"
+                                                                        aria-label="How do you drink your coffee?" value="Espresso">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Cafetiére</h3>
+                                                                        <p class="form-one-p">Course ground beans specially suited for french
+                                                                            press coffee</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </details>
+                                                    </li>
+                                                    <li class="form-item">
+                                                        <details class="form-details">
+                                                            <summary class="form-summary">How often should we deliver?</summary>
+                                                            <div class="from-box-wrapper form-img-four">
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="should"
+                                                                        aria-label="How do you drink your coffee?" value="Capsule?">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Every week</h3>
+                                                                        <p class="form-one-p">$7.20 per shipment. Includes free first-class
+                                                                            shipping.
+                                                                        </p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="should"
+                                                                        aria-label="How do you drink your coffee?" value="Filter">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Every 2 weeks</h3>
+                                                                        <p class="form-one-p">$9.60 per shipment. Includes free priority
+                                                                            shipping.</p>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="form-one-label">
+                                                                    <input class="input-one visually-hidden" type="radio" name="should"
+                                                                        aria-label="How do you drink your coffee?" value="Espresso">
+                                                                    <div class="input-box">
+                                                                        <h3 class="form-one-h">Every month</h3>
+                                                                        <p class="form-one-p">$12.00 per shipment. Includes free priority
+                                                                            shipping.</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </details>
+                                                    </li>
+                                                </ul>
+                                                <div class="form-footer">
+                                                    <h3>Order Summary</h3>
+                                                    <p>“I drink my coffee as <span>Filter</span> , with a <span>Decaf</span> type of bean.
+                                                        <span>250g</span> ground ala <span>Cafetiére</span> , sent to me <span>Every Week</span>
+                                                        .”</p>
+                                                </div>
+                                                <div class="form-btn">
+                                                    <button style="text-transform: uppercase; font-size: 12px;" class="modal-bottom-btn js-modal-open" type="button">Create me plan</button>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </details>
-                                    <details style="margin-top: 60px;" class="details-boxes">
-                                        <summary class="sum-heading">What type of coffee?</summary>
-                                        <div class="summary-boxes">
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">Single Origin</summary>
-                                                <p>Distinct, high quality <br> coffee from a specific <br> family-owned farm</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Decaf</summary>
-                                                <p>Just like regular <br> coffee, except the <br> caffeine has been <br> removed</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Blended</summary>
-                                                <p>Combination of two <br> or three dark roasted <br> beans of organic <br> coffees</p>
-                                            </div>
-                                        </div>
-                                    </details>
-                                    <details style="margin-top: 60px;" class="details-boxes">
-                                        <summary class="sum-heading">How much would you like?</summary>
-                                        <div class="summary-boxes">
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">250g</summary>
-                                                <p>Perfect for the solo <br> drinker. Yields about <br> 12 delicious cups.</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">500g</summary>
-                                                <p>Perfect option for a <br> couple. Yields <br> about 40 delectable <br> cups.</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">1000g</summary>
-                                                <p>Perfect for offices <br> and events. Yields <br> about 90 delightful <br> cups.</p>
-                                            </div>
-                                        </div>
-                                    </details>
-                                    <details style="margin-top: 60px;" class="details-boxes">
-                                        <summary class="sum-heading">Want us to grind them?</summary>
-                                        <div class="summary-boxes">
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">Wholebean</summary>
-                                                <p>Best choice if you <br> cherish the full <br> sensory experience</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Filter</summary>
-                                                <p>For drip or pour- <br> over coffee <br> methods such as <br> V60 or Aeropress</p>
-                                            </div>
-                                            <div style="padding-bottom: 56px;" class="summary-box-one">
-                                                <summary class="head-sum">Cafetiére</summary>
-                                                <p>Course ground <br> beans specially <br> suited for french <br> press coffee</p>
-                                            </div>
-                                        </div>
-                                    </details>
-                                    <details style="margin-top: 60px;" class="details-boxes before-svg-img">
-                                        <summary class="sum-heading">How often should we deliver?</summary>
-                                        <div class="summary-boxes">
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">Every week</summary>
-                                                <p>$7.20 per shipment. <br> Includes free first- <br> class shipping.</p>
-                                            </div>
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">Every 2 weeks</summary>
-                                                <p>$9.60 per shipment. <br> Includes free <br> priority shipping.</p>
-                                            </div>
-                                            <div class="summary-box-one">
-                                                <summary class="head-sum">Every month</summary>
-                                                <p>$12.00 per shipment. <br> Includes free priority <br> shipping.</p>
-                                            </div>
-                                        </div>
-                                    </details>
-                                    <div class="coffe-bottom-box">
-                                        <h4>Order Summary</h4>
-                                        <p>“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <br> <span> 250g</span> ground ala Cafetiére, sent to me <span>Every Week</span>.”</p>
                                     </div>
-                                    
-                                    <button style="text-transform: uppercase; font-size: 12px;" class="modal-bottom-btn js-modal-open" type="button">Create your plan</button>
                                 </div>
                             </div>
                         </div>
